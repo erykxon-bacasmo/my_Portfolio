@@ -2,16 +2,31 @@ body {
     font-family: Arial;
 }
 
-button {
-    padding: 10px;
-    width: 10%;
-    font-size: 15px;
-    font-weight: 600;
+.btn-container {
+    border-radius: 45px;
+    width: 15%;
+    margin-top: 5%;
+    margin-bottom: -5%;
+    margin-inline-start: 72%;
+    box-shadow: 0 8px 20px rgba(0,0,0, .3);
     cursor: pointer;
 }
 
+i:nth-child(1), i:nth-child(2) {
+    border-radius: 50%;
+    background-color: rgb(239, 239, 239);
+    overflow: hidden;
+    padding: 10px;
+    width: 30px;
+    margin-inline-start: 15%;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 40px rgba(0,0,0, .2);
+    transition: transform .3s ease;
+}
+
 div > img {
-    border: 2px solid black;
     border-radius: 50%;
     height: 25%;
     width: 25%;
@@ -20,10 +35,14 @@ div > img {
     margin-block-start: 3%;
 }
 
+/* content for the text */
+
 .body-content {
     border: 1px solid black;
-    width: 50%;
-    height: 250px;
+    width: 45%;
+    height: 300px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
     margin-top: -25%;
     margin-inline-start: 40%;
 
@@ -35,11 +54,28 @@ p {
     margin: 0;  
     font-size: 20px;  
     font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: 20px;
 }
 
 p:nth-child(3) {
     /* border: 1px solid black; */
     font-style: oblique;
+}
+
+p:nth-child(5) {
+    /* border: 1px solid black; */
+    font-style: oblique;
+}
+
+i {
+    font-size: 25px;
+    margin: 5px;
 }
 
 
