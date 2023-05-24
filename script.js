@@ -3,7 +3,6 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 });
 
-
 // var change = document.getElementById("btn-one");
 
 // var orig = document.getElementById("btn-two");
