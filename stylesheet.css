@@ -1,8 +1,64 @@
 body {
+    background-color:skyblue;
     font-family: Arial;
+    transition: background 0.2s linear;
 }
 
+/* button design for light and dark mode */
+
 .btn-container {
+    border: 1px solid black;
+    border-radius: 45px;
+    width: 6%;
+    margin-top: 5%;
+    margin-bottom: -5%;
+    margin-inline-start: 81%;
+    cursor: pointer;
+}
+
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h2, body.dark h3, body.dark p, body.dark a, body.dark a ~ i {color: white;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 90%;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 45%;
+  height: 33px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(40px);
+}
+
+/* .btn-container {
     border-radius: 45px;
     width: 15%;
     margin-top: 5%;
@@ -24,27 +80,42 @@ i:nth-child(1), i:nth-child(2) {
     cursor: pointer;
     box-shadow: 0 8px 40px rgba(0,0,0, .2);
     transition: transform .3s ease;
-}
+} */
+/* css for image */
 
-div > img {
+.image{
+    border: 1px solid green;
+    margin-block-start: 3%;
+    padding: 20px;
+}
+.image > img {
     border-radius: 50%;
     height: 25%;
     width: 25%;
-    padding: 20px;
+    /* padding: 20px;
     margin-inline-start: 10%;
-    margin-block-start: 3%;
+    margin-block-start: 3%; */
 }
+
+.image .square {
+    border: 1px solid yellow;
+    display: initial;
+    position: inherit;
+    
+}
+
 
 /* content for the text */
 
 .body-content {
     border: 1px solid black;
     width: 45%;
-    height: 300px;
+    height: 70vh;
     padding-inline-start: 10px;
     padding-inline-end: 10px;
     margin-top: -25%;
     margin-inline-start: 40%;
+    overflow: hidden;
 
 }
 
@@ -52,13 +123,13 @@ p {
     display: inline;
     width: fit-content;
     margin: 0;  
-    font-size: 20px;  
+    font-size: 18px;  
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 3px;
     line-height: 20px;
 }
@@ -73,9 +144,42 @@ p:nth-child(5) {
     font-style: oblique;
 }
 
+/* css design for contact info */
+.contact {
+    border: 2px solid red;
+    line-height: 2px;
+}
+
 i {
     font-size: 25px;
     margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.contact > p:nth-child(8) {
+    font-size: 18px;
+}
+
+
+/* css for skills info */
+
+.skills {
+    border: 2px solid #000000;
+    line-height: 2px;
+    width: 35%;
+}
+
+.inner-content {
+    border: 1px solid yellow;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 
