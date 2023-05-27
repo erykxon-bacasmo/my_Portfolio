@@ -3,6 +3,36 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 });
 
+var firstBtn = document.getElementById("page-one");
+
+var secondBtn = document.getElementById("page-second");
+
+var thirdBtn = document.getElementById("page-third");
+
+var first = document.getElementById("first-page");
+
+var second = document.getElementById("second-page");
+
+var third = document.getElementById("third-page");
+
+firstBtn.onclick = function(){
+  first.style.display = "block";
+  second.style.display = "none";
+  third.style.display = "none";
+};
+
+secondBtn.onclick = function(){
+  first.style.display = "none";
+  second.style.display = "block";
+  third.style.display = "none";
+};
+
+thirdBtn.onclick = function(){
+  first.style.display = "none";
+  second.style.display = "none";
+  third.style.display = "block";
+}
+
 // var change = document.getElementById("btn-one");
 
 // var orig = document.getElementById("btn-two");
