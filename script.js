@@ -1,8 +1,10 @@
+// for changing background when you click the dark mode button.
 var checkbox = document.getElementById("checkbox");
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 });
 
+// for clicking the button near besides the image
 var firstBtn = document.getElementById("page-one");
 
 var secondBtn = document.getElementById("page-second");
