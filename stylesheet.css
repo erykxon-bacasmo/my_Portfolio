@@ -11,13 +11,13 @@ body {
     margin: auto;
     width: 35%;
     margin-block-start: 5%;
-    margin-inline-start: 40%;
+    margin-inline-start: 41%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-button {
+/* button {
     position: relative;
     display: inline;
     width: 20%;
@@ -27,11 +27,13 @@ button {
     cursor: pointer;
     border-style: none;
     border-image-outset: none;
-}
+} */
 
 .btns a {
+    text-align: center;
     font-size: 15px;
     padding: 3px;
+    width: 20%;
     background-color: white;
 }
 
@@ -39,6 +41,7 @@ button {
     color: black;
     background-color: #f39c12;
 }
+
 
 /* button design for light and dark mode */
 
@@ -216,7 +219,7 @@ p:nth-child(5) {
 
 /* css design for contact info */
 .contact {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     line-height: 20px;
 }
 
@@ -243,22 +246,38 @@ a:hover {
 /* css for skills info */
 
 .skills {
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     line-height: 20px;
-    width: 35%;
+    width: 40%;
 }
 
 .inner-content {
-    border: 1px solid yellow;
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
+.body-content:nth-child(2) > p{
+
+    text-align: justify;
+}
+
+.other-skills {
+    margin-block-start: -10px;
+    line-height: 20px;
+    width: 60%;
+}
+
+.hobbies {
+    margin-block-start: -10px;
+    line-height: 20px;
+    width: 35%;
+}
+
 /* animated background */
 .area{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: 95%;
     height:95vh;
     margin: auto;
