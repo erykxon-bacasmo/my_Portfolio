@@ -1,3 +1,4 @@
+/* This is for 1366px screen size but I made responsive syntax below*/
 body {
     background: #4e54c8;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
@@ -30,9 +31,10 @@ body {
 } */
 
 .btns a {
+    border-radius: 15px;
     text-align: center;
     font-size: 15px;
-    padding: 3px;
+    padding: 5px;
     width: 20%;
     background-color: white;
 }
@@ -116,33 +118,10 @@ body.dark .circles li {
   transform: translateX(40px);
 }
 
-/* .btn-container {
-    border-radius: 45px;
-    width: 15%;
-    margin-top: 5%;
-    margin-bottom: -5%;
-    margin-inline-start: 72%;
-    box-shadow: 0 8px 20px rgba(0,0,0, .3);
-    cursor: pointer;
-}
-
-i:nth-child(1), i:nth-child(2) {
-    border-radius: 50%;
-    background-color: rgb(239, 239, 239);
-    overflow: hidden;
-    padding: 10px;
-    width: 30px;
-    margin-inline-start: 15%;
-    font-size: 30px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 8px 40px rgba(0,0,0, .2);
-    transition: transform .3s ease;
-} */
 /* css for image */
 
 .image{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin-block-start: 8%;
     margin-inline-start: 10%;
     padding: 20px;
@@ -156,6 +135,23 @@ i:nth-child(1), i:nth-child(2) {
     /* padding: 20px; */
     /* margin-inline-start: 5%; */
     /* margin-block-start: 3%; */
+}
+/* first page */
+#first-page {
+    padding: 10px;
+    margin: 5px;
+    height: 80%;
+}
+
+/* second page */
+#second-page {
+    padding: 10px;
+}
+
+/* third page */
+#third-page {
+    padding: 10px;
+    margin: 5px;
 }
 
 /* content for the text */
@@ -177,6 +173,7 @@ i:nth-child(1), i:nth-child(2) {
     /* border: 1px solid black; */
     position: relative;
     animation: sample 0.5s alternate-reverse ;
+    /* overflow: hidden; */
 
 }
 
@@ -196,12 +193,14 @@ p {
     display: inline;
     width: fit-content;
     margin: 0;  
+    font-family: arial;
     font-size: 18px;  
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 h2{
+    font-family: tahoma;
     font-size: 35px;
     letter-spacing: 3px;
     line-height: 20px;
@@ -259,8 +258,12 @@ a:hover {
 }
 
 .body-content:nth-child(2) > p{
-
+    font-size: 16px;
     text-align: justify;
+}
+
+.other-skills > h3, .hobbies > h3 {
+    font-size: 17px;
 }
 
 .other-skills {
@@ -272,7 +275,11 @@ a:hover {
 .hobbies {
     margin-block-start: -10px;
     line-height: 20px;
-    width: 35%;
+    width: 38%;
+}
+
+.hobbies > p, .other-skills > p {
+    font-size: 14px;
 }
 
 /* animated background */
@@ -283,8 +290,6 @@ a:hover {
     margin: auto;
     margin-bottom: -48%;
     position: relative;
-    
-   
 }
 
 .circles{
@@ -385,6 +390,118 @@ a:hover {
         border-radius: 50%;
     }
 
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+    .area{
+        border: 1px solid red;
+        width: 95%;
+        height:95vh;
+        margin: auto;
+        margin-bottom: -68%;
+        position: relative;
+    }
+
+    .btns {
+        /* border: 1px solid yellow; */
+        position: relative;
+        margin: auto;
+        width: 42%;
+        margin-block-start: 0%;
+        margin-inline-start: 41%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .btns a {
+        border-radius: 15px;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px;
+        width: 20%;
+        background-color: white;
+    }
+    
+    .btns a:hover {
+        color: black;
+        background-color: #f39c12;
+    }
+    
+    
+    /* button design for light and dark mode */
+    
+    .btn-container {
+        position: relative;
+        border-radius: 45px;
+        width: 6%;
+        margin-top: -10%;
+        margin-bottom: 2%;
+        margin-inline-start: 81%;
+        cursor: pointer;
+    }
+
+    .checkbox-label {
+        width: 100%;
+      }
+
+    .checkbox-label .ball {
+        background-color: #fff;
+        width: 50%;
+        height: 33px;
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+      }
+
+      /* css for image */
+
+    .image{
+        /* border: 1px solid green; */
+        margin-block-start: 8%;
+        margin-inline-start: 5%;
+        padding: 20px;
+        width: 30%;
+        position: absolute;
+    }
+    .image > img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        /* padding: 20px; */
+        /* margin-inline-start: 5%; */
+        /* margin-block-start: 3%; */
+    }
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .area{
+        border: 1px solid red;
+        width: 95%;
+        height:95vh;
+        margin: auto;
+        margin-bottom: -60%;
+        position: relative;
+    }
+
+    .body-container {
+        border-radius: 5%;
+        background-color: #c7d5ff6c;
+        width: 45%;
+        height: 50vh;
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+        margin-top: 5px;
+        margin-inline-start: 40%;
+        position: absolute;
+        overflow: hidden;
+    }
 }
 
 
