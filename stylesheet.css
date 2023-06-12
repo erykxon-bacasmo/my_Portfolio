@@ -148,6 +148,13 @@ body.dark .circles li {
     padding: 10px;
 }
 
+#second-page p, #second-page i {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* third page */
 #third-page {
     padding: 10px;
@@ -282,6 +289,8 @@ a:hover {
     font-size: 14px;
 }
 
+
+
 /* animated background */
 .area{
     /* border: 1px solid yellow; */
@@ -392,11 +401,154 @@ a:hover {
 
 }
 
+
+
 /* Responsive */
+@media only screen and (max-width: 768px) {
+
+    div.btns {
+        /* border: 1px solid yellow; */
+        position: relative;
+        margin: auto;
+        width: 48%;
+        margin-block-start: 0%;
+        margin-inline-start: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    div.btns > a {
+        border-radius: 15px;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px;
+        width: 20%;
+        background-color: white;
+    }
+    
+    .btns a:hover {
+        color: black;
+        background-color: #f39c12;
+    }
+    
+    
+    /* button design for light and dark mode */
+    
+    div.btn-container {
+        position: relative;
+        border-radius: 45px;
+        width: 6%;
+        margin-top: 0;
+        margin-bottom: 2%;
+        margin-inline-start: 83%;
+        cursor: pointer;
+    }
+
+    label.checkbox-label {
+        margin-inline-start: 40%;
+        width: 60px;
+        height: 20px;
+    }
+
+    label.checkbox-label .ball {
+        background-color: #fff;
+        width: 42%;
+        height: 28px;
+        position: absolute;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+    }
+
+    .fa-moon, .fa-sun {
+        font-size: 20px;
+    }
+
+
+      /* css for image */
+
+    div.image{
+        top: 8%;
+        margin-inline-start: 18px;
+        width: 35%;
+        position: absolute;
+    }
+    div.image > img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* content */
+    .body-container {
+        margin-inline-start: 42%;
+        width: 48%;
+    }
+
+    .body-content h2 {
+        font-size: 20px;
+    }
+
+    .body-content p, .body-content h3, .body-content a {
+        font-size: 12px;
+    }
+
+    #first-page .contact a, #first-page .contact p {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+
+    #first-page .contact i {
+        font-size: 18px;
+    }
+
+    #first-page .skills p{
+        font-size: 10px;
+
+        /* width: 60%; */
+    }
+
+
+    #second-page p {
+        font-size: 11px;
+        display: flex;
+        margin-top: -10px;
+    }
+
+    #third-page p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #first-page .outer-content {
+        margin-top: -5%;
+    }
+
+    #first-page .outer-content p, #first-page .outer-content a{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    /* background */
+    .area{
+        width: 100%;
+        height:95vh;
+        margin: auto;
+        margin-bottom: -68%;
+        position: relative;
+    }
+
+}
+
 
 @media only screen and (max-width: 1024px) {
     .area{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 95%;
         height:95vh;
         margin: auto;
@@ -477,12 +629,54 @@ a:hover {
         /* margin-block-start: 3%; */
     }
 
+    .inner-content .contact a, .inner-content .contact p {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+
+    .body-content #first-page .contact i {
+        font-size: 18px;
+    }
+
+    #first-page .skills p{
+        font-size: 10px;
+
+        /* width: 60%; */
+    }
+
+
+    #second-page p {
+        font-size: 11px;
+        display: flex;
+        margin-top: -10px;
+    }
+
+    #third-page p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-content .outer-content {
+        border: 1px solid yellow;
+        margin-top: 5%;
+    }
+
+    .body-content .outer-content p, .body-content .outer-content a{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
 
 }
 
 @media only screen and (min-width: 1440px) {
     .area{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 95%;
         height:95vh;
         margin: auto;
@@ -501,6 +695,12 @@ a:hover {
         margin-inline-start: 40%;
         position: absolute;
         overflow: hidden;
+    }
+
+    #second-page p, #second-page i {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
     }
 }
 
