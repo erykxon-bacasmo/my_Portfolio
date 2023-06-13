@@ -404,6 +404,145 @@ a:hover {
 
 
 /* Responsive */
+@media only screen and (max-width: 425px) {
+    .btns {
+        border: 1px solid yellow;
+        position: relative;
+        margin: auto;
+        width: 48%;
+        margin-block-start: -20%;
+        margin-inline-start: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    div.btns > a {
+        border-radius: 15px;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px;
+        width: 20%;
+        background-color: white;
+    }
+    
+    .btns a:hover {
+        color: black;
+        background-color: #f39c12;
+    }
+    
+    
+    /* button design for light and dark mode */
+    
+    .btn-container {
+        border: 1px solid yellow;
+        border-radius: 45px;
+        width: 6%;
+        margin-top: -20px;
+        margin-inline-start: 83%;
+        cursor: pointer;
+    }
+
+    label.checkbox-label {
+        margin-inline-start: 40%;
+        width: 60px;
+        height: 20px;
+    }
+
+    label.checkbox-label .ball {
+        background-color: #fff;
+        width: 42%;
+        height: 28px;
+        position: absolute;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+    }
+
+    .fa-moon, .fa-sun {
+        font-size: 20px;
+    }
+
+
+      /* css for image */
+
+    div.image{
+        top: 8%;
+        margin-inline-start: 18px;
+        width: 35%;
+        position: absolute;
+    }
+    div.image > img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* content */
+    .body-container {
+        margin-inline-start: 42%;
+        width: 48%;
+    }
+
+    .body-content h2 {
+        font-size: 20px;
+    }
+
+    .body-content p, .body-content h3, .body-content a {
+        font-size: 12px;
+    }
+
+    #first-page .contact a, #first-page .contact p {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+
+    #first-page .contact i {
+        font-size: 18px;
+    }
+
+    #first-page .skills p{
+        font-size: 10px;
+
+        /* width: 60%; */
+    }
+
+
+    #second-page p {
+        font-size: 11px;
+        display: flex;
+        margin-top: -10px;
+    }
+
+    #third-page p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #first-page .outer-content {
+        margin-top: -5%;
+    }
+
+    #first-page .outer-content p, #first-page .outer-content a{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    /* background */
+    .area{
+        width: 100%;
+        height:95vh;
+        margin: auto;
+        margin-bottom: -68%;
+        position: relative;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
 
     div.btns {
