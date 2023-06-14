@@ -411,9 +411,9 @@ a:hover {
         /* border: 1px solid yellow; */
         position: relative;
         margin: auto;
-        width: 90%;
+        width: 100%;
         margin-block-start: -14%;
-        margin-inline-start: 5%;
+        margin-inline-start: 0%;
         display: flex;
         align-items: center;
         justify-content: space-between;
