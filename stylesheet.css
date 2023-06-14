@@ -62,14 +62,23 @@ body.dark .body-container{
 
 body.dark .btns a {
     color: black;
+    box-shadow: 3px 2px 2px#e3e3e36c;
 }
 
 body.dark a:hover {
     color: black;
 }
+
+body.dark .image > img{
+    box-shadow: 5px 4px 2px#c3c3c36c ;
+}
+
 body.dark .circles li {
     background: rgba(255, 255, 255, 0.500);
 }
+
+
+
 /* button design */
 .checkbox {
   opacity: 0;
@@ -123,6 +132,7 @@ body.dark .circles li {
     border-radius: 50%;
     height: 100%;
     width: 100%;
+    box-shadow: 5px 4px 6px black;
     /* padding: 20px; */
     /* margin-inline-start: 5%; */
     /* margin-block-start: 3%; */
@@ -460,7 +470,7 @@ a:hover {
     body .image {
         /* border: 1px solid red; */
         margin-inline-start: 28%;
-        margin-top: -54%;
+        margin-top: -55%;
         width: 40%;
         padding: 0px;
     }
