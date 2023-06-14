@@ -424,7 +424,8 @@ a:hover {
         position: relative;
         margin: auto;
         width: 100%;
-        margin-block-start: -14%;
+        margin-block-start: -12%;
+        margin-block-end: 10px;
         margin-inline-start: 0%;
         display: flex;
         align-items: center;
