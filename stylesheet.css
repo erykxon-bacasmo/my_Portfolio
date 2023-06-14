@@ -408,6 +408,12 @@ a:hover {
 @media only screen and (max-width: 720px) {
     div.btns {
         width: 100%;
+        margin-block-start: -12%;
+        margin-bottom: 5px;
+    }
+
+    body .image {
+        margin-bottom: 5px;
     }
 }
 
