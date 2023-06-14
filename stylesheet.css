@@ -405,6 +405,12 @@ a:hover {
 
 
 /* Responsive */
+@media only screen and (max-width: 720px) {
+    div.btns {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 425px) {
 
     div.btns {
