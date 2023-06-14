@@ -16,19 +16,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
-/* button {
-    position: relative;
-    display: inline;
-    width: 20%;
-    padding: 3px;
-    font-family: tahoma;
-    font-weight: 600;
-    cursor: pointer;
-    border-style: none;
-    border-image-outset: none;
-} */
 
 .btns a {
     border-radius: 15px;
@@ -37,6 +27,7 @@ body {
     padding: 5px;
     width: 20%;
     background-color: white;
+    box-shadow: 2px 2px 2px black;
 }
 
 .btns a:hover {
@@ -304,9 +295,9 @@ a:hover {
 .circles{
     position: relative;
     top: -5%;
-    left: 0;
+    left: -5%;
     width: 100%;
-    height: 105%;
+    height: 102vh;
     overflow: hidden;
 }
 
@@ -405,13 +396,14 @@ a:hover {
 
 /* Responsive */
 @media only screen and (max-width: 425px) {
-    .btns {
-        border: 1px solid yellow;
+
+    div.btns {
+        /* border: 1px solid yellow; */
         position: relative;
         margin: auto;
-        width: 48%;
-        margin-block-start: -20%;
-        margin-inline-start: 45%;
+        width: 90%;
+        margin-block-start: -14%;
+        margin-inline-start: 5%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -434,13 +426,14 @@ a:hover {
     
     /* button design for light and dark mode */
     
-    .btn-container {
-        border: 1px solid yellow;
+    div.btn-container {
+        /* border: 1px solid yellow; */
         border-radius: 45px;
         width: 6%;
-        margin-top: -20px;
-        margin-inline-start: 83%;
-        cursor: pointer;
+        margin-block-start: -95vh;
+        margin-block-end: 50%;
+        margin-inline-start: 80%;
+        cursor: pointer;    
     }
 
     label.checkbox-label {
@@ -464,27 +457,27 @@ a:hover {
 
 
       /* css for image */
+    body .image {
+        /* border: 1px solid red; */
+        margin-inline-start: 28%;
+        margin-top: -54%;
+        width: 40%;
+        padding: 0px;
+    }
 
-    div.image{
-        top: 8%;
-        margin-inline-start: 18px;
-        width: 35%;
-        position: absolute;
-    }
-    div.image > img {
-        border-radius: 50%;
-        height: 100%;
-        width: 100%;
-    }
 
     /* content */
     .body-container {
-        margin-inline-start: 42%;
-        width: 48%;
+        margin-inline-start: 3%;
+        width: 91%;
+        height: 60vh;
+        padding: 0;
+        overflow-y: scroll;
     }
 
     .body-content h2 {
         font-size: 20px;
+        margin-top: 0;
     }
 
     .body-content p, .body-content h3, .body-content a {
@@ -533,28 +526,20 @@ a:hover {
     }
 
     /* background */
-    .area{
-        width: 100%;
-        height:95vh;
-        margin: auto;
-        margin-bottom: -68%;
-        position: relative;
+    .circles {
+        /* border: 1px solid red; */
+        margin-inline-start: -2%;
     }
 }
 
 
 @media only screen and (max-width: 768px) {
 
-    div.btns {
-        /* border: 1px solid yellow; */
+    .btns {
+        /* border: 1px solid black; */
         position: relative;
-        margin: auto;
-        width: 48%;
-        margin-block-start: 0%;
-        margin-inline-start: 45%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        margin-inline-start: 40%;
+        width: 60%;
     }
     
     div.btns > a {
@@ -566,15 +551,10 @@ a:hover {
         background-color: white;
     }
     
-    .btns a:hover {
-        color: black;
-        background-color: #f39c12;
-    }
-    
     
     /* button design for light and dark mode */
     
-    div.btn-container {
+    .btn-container {
         position: relative;
         border-radius: 45px;
         width: 6%;
@@ -606,22 +586,20 @@ a:hover {
 
       /* css for image */
 
-    div.image{
+    /* div.image{
         top: 8%;
         margin-inline-start: 18px;
         width: 35%;
-        position: absolute;
     }
     div.image > img {
         border-radius: 50%;
         height: 100%;
         width: 100%;
-    }
+    } */
 
     /* content */
     .body-container {
-        margin-inline-start: 42%;
-        width: 48%;
+        overflow: scroll;
     }
 
     .body-content h2 {
@@ -645,8 +623,6 @@ a:hover {
 
     #first-page .skills p{
         font-size: 10px;
-
-        /* width: 60%; */
     }
 
 
@@ -674,13 +650,13 @@ a:hover {
     }
 
     /* background */
-    .area{
+    /* .area{
         width: 100%;
         height:95vh;
         margin: auto;
         margin-bottom: -68%;
         position: relative;
-    }
+    } */
 
 }
 
@@ -799,7 +775,7 @@ a:hover {
     }
 
     .body-content .outer-content {
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
         margin-top: 5%;
     }
 
